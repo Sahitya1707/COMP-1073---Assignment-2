@@ -5,17 +5,65 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Order Your Smoothie</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="./script/script.js" defer></script>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <main>
+        <section>
+            <form action="">
+                <h1>Create Your Own Smoothie</h1>
+                <div class="form-name group">
+                    <label for="name " class="label-heading">Name:</label>
+                    <input type="text" placeholder="Enter your Name" id="name">
+
+                </div>
+
+                <div class="flavor-dropdown group">
+                    <label for="flavor" class=" label-heading">Choose a Flavor:</label>
+                    <select id="flavor" name="flavor">
+                        <option value="strawberry">Strawberry</option>
+                        <option value="banana">Banana</option>
+                        <option value="mango">Mango</option>
+
+                    </select>
+                </div>
+                <div class="form-checkbox group">
+                    <label class="label-heading">Additional Ingredients:</label>
+                    <div class="single-checkbox">
+                        <input type="checkbox" id="fruits" name="fruits">
+                        <label for="fruits">Extra Fruits</label>
+                    </div>
+                    <div class="single-checkbox">
+                        <input type="checkbox" id="nuts" name="nuts">
+                        <label for="nuts">Nuts</label>
+                    </div>
+                    <div class="single-checkbox">
+                        <input type="checkbox" id="yogurt" name="yogurt">
+                        <label for="yogurt">Yogurt</label>
+                    </div>
+                    <div class="single-checkbox">
+                        <input type="checkbox" id="chocolate" name="chocolate">
+                        <label for="chocolate">Chocolate</label>
+                    </div>
+
+                </div>
+                <div class="form-instruction group">
+                    <label for="instructions" class=" label-heading">Your instruction:</label>
+                    <textarea id="instructions" name="instructions" placeholder="Add instructions"></textarea>
+                </div>
+
+                <!-- added div outside of button to center the button ✌️ -->
+                <div class="button-div">
+                    <button class="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
 
 </body>
 

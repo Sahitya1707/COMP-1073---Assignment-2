@@ -1,5 +1,6 @@
 # Build a simple HTML form that you think would be appropriate for a customer to order a smoothie.
 
+- LINK - https://brilliant-caramel-f61275.netlify.app/
 - Be creative, but practical – what different options might you want your customers to have?
 - Create a local and remote code repository.
 - Create a class for a smoothie object that follows best practices as demonstrated in class.

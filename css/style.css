@@ -1,0 +1,104 @@
+/* importing font */
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Protest+Riot&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ultra&display=swap");
+
+/* Declaring global css variable as it will help me to make my css better */
+:root {
+  --color-1: #5d98ff;
+  --color-2: #000000;
+  --color-3: #16e885;
+  --color-4: #fff;
+  --border-radius-1: 5%;
+  --border-raidus-2: 5px;
+}
+/* (* is a universal selector and these styles will be applied to all the elements on the page) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+main {
+  /* Custom properties are accessed using the CSS var() - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+  background-color: var(--color-1);
+  height: 100vh;
+  width: 100vw;
+}
+section {
+  /* centering vertically and horizontally by using display flex */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+/* styling form */
+form {
+  /* height: 20rem; */
+  border: 2px solid var(--color-2);
+  border-radius: var(--border-radius-1);
+  padding: 1rem 2rem;
+  background-color: var(--color-3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px 0;
+}
+/* styling heading
+*/
+section form h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0rem 0 2rem 0;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px 0;
+}
+/* selecting input box */
+form input[type="text"]#name {
+  padding: 0.5rem 0.5rem;
+  border: 2px solid var(--color-2);
+  border-radius: var(--border-raidus-2);
+}
+/* making all the label to be box */
+.label-heading {
+  font-weight: bold;
+}
+/* selecting drop down  */
+.flavor-dropdown #flavor {
+  padding: 0.5rem;
+  border-radius: var(--border-raidus-2);
+}
+.form-instruction #instructions {
+  height: 4rem;
+  padding: 0.5rem;
+  border: 2px solid var(--color-2);
+  border-radius: var(--border-raidus-2);
+}
+.button-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+/* styling button */
+.submit {
+  width: 20%;
+  padding: 0.5rem 0;
+  border: 2px solid var(--color-2);
+  border-radius: var(--border-raidus-2);
+  background-color: var(--color-1);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  color: var(--color-4);
+}
+.submit:hover {
+  color: var(--color-1);
+  background-color: var(--color-4);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
