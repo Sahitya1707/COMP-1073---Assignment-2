@@ -7,6 +7,7 @@
   --color-2: #000000;
   --color-3: #16e885;
   --color-4: #fff;
+  --color-5: #de0000;
   --border-radius-1: 5%;
   --border-raidus-2: 5px;
 }
@@ -34,6 +35,7 @@ section {
 /* styling form */
 form {
   /* height: 20rem; */
+  position: relative;
   border: 2px solid var(--color-2);
   border-radius: var(--border-radius-1);
   padding: 1rem 2rem;
@@ -101,4 +103,34 @@ form input[type="text"]#name {
   background-color: var(--color-4);
   cursor: pointer;
   transition: 0.2s ease-in-out;
+}
+.your-smoothie {
+  font-size: 20px;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+.absolute {
+  position: absolute;
+  top: 70px;
+  right: 50px;
+}
+/* Clear form button */
+.clear-form {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  background-color: var(--color-5);
+  border: 2px solid var(--color-4);
+  color: var(--color-4);
+  border-radius: var(--border-raidus-2);
+}
+.clear-form:hover {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  background-color: var(--color-4);
+  border: 2px solid var(--color-5);
+  color: var(--color-5);
+}
+.absolute p {
+  padding: 0.5rem;
+  color: var(--color-5);
 }
